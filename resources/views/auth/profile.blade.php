@@ -28,7 +28,7 @@
                             <x-input id="name"
                                      class="block mt-1 w-full"
                                      type="text"
-                                     name="name"
+                                     name="{{ auth()->user()->name }}"
                                      value="???"
                                      required />
                         </div>
@@ -40,7 +40,7 @@
                                      class="block mt-1 w-full"
                                      type="email"
                                      name="email"
-                                     value="???"
+                                     value="{{ auth()->user()->mail }}"
                                      required />
                         </div>
 
